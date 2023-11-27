@@ -1,0 +1,105 @@
+
+마크업이란
+- 컴퓨터가 기능을 이해할 수 있는 HTML의 문법
+규칙 : <마크업> ~내용물~ </마크업>
+예외 : <br />, <img /> 등
+속성(부가기능) : <마크업 속성명 = "값"> ~내용물~ </마크업>
+
+주석
+<!-- 주석 : 코드설명 -->
+
+마크업 종류
+1.<h1>~<h6>
+2. <p>
+3. <br/>
+4.
+    1.<ul>
+        <li>
+    2.<ol>
+        <li>
+    3.<dl>
+        <dt>
+        <dd>
+5. <a href=""></a>
+6. <img src=""/>
+    - 상대경로
+    - 절대경로
+6. <audio src="오디오.mp3"></audio>
+
+6. <video src="186195 (720p).mp4"></video> : 컨트롤러 표시 안됨. [실행버튼 안보임]
+   <video src="186195 (720p).mp4" controls></video> : 컨트롤러 표시 [controls속성]
+   <video src="186195 (720p).mp4" controls autoplay></video> : 자동실행[브라우저 정책상 금지] -> js 이용해서 강제실행
+   <video src="186195 (720p).mp4" controls autoplay muted></video> : 소리없이 자동실행
+
+6. <iframe></iframe>
+    - 외부에서 멀티미디어(동영상, 이미지, 지도 등등)를 퍼가기 할 때 제공해주는 태그
+
+7. <em>, <strong>, <mark>, <i>, <b>
+8.
+    <table>
+        <thead>
+        <tbody>
+            <tr>
+                <th>
+                <td>
+* 속성
+    1. border
+    2. colspan
+    3. rowspan
+
+9. <address>
+
+10. <input/>
+    - <form> 태그 안에서 사용
+    - 주요속성
+        1. type
+            type="text" : [기본값] 텍스트
+            <input type="text"/> : 텍스트 입력창 
+            <input type="password"/> : 패스워드 입력창
+            <input type="email"/> : 이메일 입력창 [submit 제출시 유효성 검사 @] 
+            <input type="color"/> : 색상 입력창  
+            <input type="date"/> : 날짜 입력창  
+            <input type="datetime-local"/> : 날짜/시간 입력창  
+            <input type="month"/> : 날짜(월) 입력창  
+            <input type="time"/> : 시간  
+            <input type="week"/> : 주  
+            <input type="range"/> : 범위 스크롤  
+            <input type="number"> : 숫자입력 증가/감소  
+            <input type="file"> : 첨부파일 입력  
+            <input type="radio" name="동의여부"> : 원형체크버튼 [단일선택 = 여러개 radio 타입의 이름 일치화] 
+            <input type="checkbox" name="가입경로"> : 네모체크버튼[복수선택 = 여러개 cheakbox타입의 name 일치화]   
+            <input type="button"/> : 일반 버튼 입력/클릭  [*추후에 js와 같이 사용할 예정]
+            <input type="submit"/> : 전송/제출 버튼 입력/클릭 [*추후에 java서버에게 전송할 예정] 
+            <input type="reset"/> : 초기화 버튼 입력/클릭  
+        2. name
+            - 태그의 이름을 넣어서 식별하는 역할[사람 이름]
+            <남자 이름 = "유재석"/ >
+        3. value
+            - 초기값 넣어주기     
+        4. palceholder
+            - 가이드 라인
+        5. readonly
+            - 수정불가[읽기모드]
+        6. disabled
+            - 사용불가
+        7. autofocus
+            - 포커스[커서 이동]
+        8. minlength, maxlength
+            - 값은 최소 길이, 최대 길이
+        9. multiple
+            -[type='file'] 일 때 체크상태
+        10. checked
+            -[type='radio'] 일 때 체크상태
+            -[type='checkbox'] 일 때 체크상태
+10. <textarea>
+    - 긴글 텍스트
+    - 속성
+        rows = "행 텍스트 개수"
+        cols = "열 텍스트 개수"
+10. <select>
+    - 목록 상자
+    - 하위태그
+        <option> 항목 </option>
+11. <filedset>
+    - 필드 구역 만들기
+    - 필드 제목

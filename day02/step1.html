@@ -1,0 +1,89 @@
+<!-- vscode 에디터 자동완성 : ctrl+ 스페이스바
+    - 코드 추천
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- 
+        상대경로 : 현재파일 기준으로부터 불러올 파일의 위치
+        ../ : 상위 폴더로 이동
+              ../ 폴도명 / 파일명 : 상위폴더 이동후 해당폴더 안에 있는 파일위치
+        ./ 또는 생략 : 현재 위치
+      
+        절대경로
+        - 에디터가 지원
+    -->
+    <!-- 1.이미지 출력 -->
+    <img src="../capyzou.png" alt=""> <!-- 상위폴더 내 파일-->
+    <img src="../day01/capyzou.png" alt=""> <!-- 상위폴더내 폴더안에 파일-->
+
+    <!--2. 음성 파일 출력 -->
+    <audio src="오디오.mp3" controls autoplay></audio>
+
+    <!--3. 영상 파일 출력 -->
+    <video src="186195 (720p).mp4" controls autoplay muted></video>
+
+
+    <!--4. 멀티미디어 출력 -->
+        <!-- 유튜브 퍼가기 -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MjyslpML32w?si=NSzrBEwnbpzN29iZ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- 구글지도 퍼가기 -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.700034963708!2d126.85151743894191!3d37.30935002638868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f26eca4e801%3A0xcc760a7a473e93bf!2z7ZWc64yA7JWe7Jet!5e0!3m2!1sko!2skr!4v1700790233913!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <br/> <br/> <br/> <br/>
+    <!-- 입력 태그 관련 태그 -->
+
+    <!-- 입력상자 -->
+    <form> <!-- 양식(폼) START -->
+        <input value="유재석" readonly/>
+        <input type="text" placeholder="부서번호" disabled/> <!-- 텍스트 입력창 -->
+        <input type="password" autofocus/> <!-- 패스워드 입력창 -->
+        <input type="email" maxlength="5" minlength="3"/> <!-- 이메일 입력창 [submit 제출시 유효성 검사 @]-->
+
+        <input type="color"/> <!-- 색상 입력창 -->
+        <input type="date" value="2023-11-24"/> <!-- 날짜 입력창 -->
+        <input type="datetime-local"/> <!-- 날짜/시간 입력창 -->
+        <input type="month"/> <!-- 날짜(월) 입력창 -->
+        <input type="time"/> <!-- 시간 -->
+        <input type="week"/> <!-- 주 -->
+        <input type="range"/> <!-- 범위 스크롤 -->
+        <input type="number"/> <!-- 숫자입력 증가/감소 -->
+        <input type="file" multiple/> <!-- 첨부파일 입력 -->
+
+        <br />
+        <input type="radio" name="동의여부" checked />예 <!-- 원형체크버튼 [단일선택 = 여러개 radio 타입의 이름 일치화]-->
+        <input type="radio" name="동의여부"/>아니요 
+
+        <br />
+        <input type="checkbox" name="가입경로"/> 뉴스 <!-- 네모체크버튼[복수선택 = 여러개 cheakbox타입의 name 일치화]  -->
+        <input type="checkbox" name="가입경로" checked/> 지인추천
+        <input type="checkbox" name="가입경로"/> 검색
+
+
+        <br />
+        <input type="button"/> <!-- 일반 버튼 입력/클릭 -->
+        <input type="submit"/> <!-- 전송/제출 버튼 입력/클릭 -->
+        <input type="reset"/> <!-- 초기화 버튼 입력/클릭 -->
+        
+        <br />
+        <textarea rows="5" cols="10"></textarea> <!-- 긴글 텍스트 -->
+
+        <br />
+        <select>
+            <option>네이버</option>
+            <option>카카오</option>
+            <option>다음</option>
+        </select>
+    </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* css주석 */
+/* 
+    1. 어디의 : body
+    2. 무엇을 : background-color
+    3. 어떻게 : red
+    - body 마크업에 배경색을 그린으로 꾸미기
+*/
+body{background-color: green;}
