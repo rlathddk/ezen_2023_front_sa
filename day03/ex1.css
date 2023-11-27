@@ -1,0 +1,38 @@
+body{
+    background-color: #bbf1ef;
+}
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: solid 3px white;
+    border-radius: 20px;
+    padding: 6px 0;
+    width: 300px;
+    margin: 20px auto;
+}
+img {
+    border-radius: 50%;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul >li {
+    width: 300px;
+    padding: 20px 0;
+    background-color: pink;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 4px;
+}
+
+ul >li > a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+
+}

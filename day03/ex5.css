@@ -1,0 +1,13 @@
+body {width: 400px; margin: 0 auto; background-color: #f2f2f2;}
+.bg {background-color: white; padding: 10px;}
+img {width: 200px; }
+input{width: 270px;}
+button{width: 289px;}
+input{background-color: aliceblue; border: 1px solid gray; padding: 5px; margin:5px 0; border-radius: 5px;}
+button {display: block; background-color: #1877f2; border-style: none;  font-weight: bold; border-radius: 10px; margin: 10px auto;}
+button > a {color: white;}
+a {display: block; text-align: center; text-decoration: none; color:#1a0dab; padding: 10px ;}
+.fb {display: inline;}
+.link2 {font-size: 12px;}
+.box {border: 1px solid #a0a0a085; padding: 20px; text-align: center; margin-bottom: 10px;}
+.join {display: inline; font-weight: bold; color: rgb(29, 178, 236) ;}
