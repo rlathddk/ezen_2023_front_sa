@@ -1,0 +1,116 @@
+/*맑은고딕 12px. 1280. */
+a{color: black; text-decoration: none;}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+#header{
+    width: 1280px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#top_menu{
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+#top_menu span{
+    margin: 0 10px;
+}
+#main_menu{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 700px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+#box {display: flex; width: 1280px; margin: 0 auto;}
+#aside {width: 200px;}
+#aside_top{
+    padding: 10px 0;
+}
+#aside_top h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #0CA9A3;
+    padding: 10px;
+}
+#aside_top p {
+    padding: 10px;
+    font-size: 14px;
+}
+#aside_top input {
+    display: inline;
+    width: 136px;
+    height: 19px;;
+}
+button {display: inline 136px; }
+button {width: 50px;}
+
+#aside_btm ul {border-top: 2px solid black;}
+#aside_btm ul li {padding: 10px;}
+#aside_btm ul li:first-child {border-bottom: 1px solid #F1F1F1; font-weight: bold;}
+#article {width: 1000px; display: flex;}
+#article dl {margin: 20px 0 40px 0;}
+#article dl dt {
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+#article dl dd{
+    font-size: 13px;
+    line-height: 1.7;
+}
+#article_lf {width: 480px; margin: 0 20px 0 20px;}
+#flex p,a {display: flex; justify-content: space-between; line-height: 2;}
+#article_rig {width: 480px;}
+#article_rig a {display: inline-block; margin-bottom: 25px;}
+#article_rig a p {line-height: 1;}
+#article_rig dl dd {display: inline-block; }
+
+#footer{
+    background-color: #05354e;
+    color: white;
+    font-size: 15px;
+}
+#ft_box{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#ft_top{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+    padding: 20px 0;
+}
+#name{
+    color: white;
+}
+#ft_info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+#ft_info h3{
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+#ft_info li{
+    padding-bottom: 5px;
+}
+
+#main_img{
+    background-image: url(img/main_bg.png);
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

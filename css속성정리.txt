@@ -73,6 +73,11 @@ CSS : 캐스케이딩(상속-부/자) 스타일 시트(Cascading Style sheets)
         padding : 10px 20px : 위 아래
         padding : 10px 20px 30px 40px : 시계방향
 
+        - 박스모델(block) 가운데정렬
+        margin : 0 auto;
+        - 박스모델(inline) 가운데정렬
+        text-align : center ; - 텍스트, img, a등등
+        
     4.box-sizing
         box-sizingm content-box : 포함x
         box-sizing : border-box : 포함o[*권장]
@@ -90,6 +95,35 @@ CSS : 캐스케이딩(상속-부/자) 스타일 시트(Cascading Style sheets)
             - inline+block
             - width, height 적용가능
         display : none; : 표시안함
+
+        display : flex ; : 하위요소들은 배치
+            1. flex-wrap : 하위요소 줄바꿈 요소
+                nowrap  : 하위요소 줄바꿈x
+                wrap : 하위요소 줄바꿈o
+                wrap-reverse : 하위요소 줄바꿈o + 반대로
+            
+            2. flex-direction : 하위요소들을 배치 방향
+                row : (기본값)하위요소들을 가로배치
+                column : 하위요소들을 세로배치
+                row-reverse : 하위요소들을 가로배치 + 반대로
+                column-reverse : 하위요소들을 세로배치 + 반대로
+
+            3. justify-content : 하위요소들을 가로 정렬
+                flex-start : (기본값)왼쪽부터 정렬
+                flex-end : 오른쪽부터 정렬
+                center : 가운데 정렬
+                space-between : 양쪽끝에 여백없이 사이 여백 균등 정렬
+                space-around : 양쪽끝에 여백은 절반으로 하고 사이 여백 균등 정렬
+                space-evenly : 양쪽끝에 여백과 사이 여백 균등 정렬
+
+            4. align-items : 하위요소들을 세로 정렬
+                stretch : (기본값) 부모의 높이만큼 자동으로 늘어남
+                flex-start : 윗변 정렬
+                flex-end : 밑변 정렬
+                center : 가운데 정렬
+                baseline : 내용물을 아래 기준으로 정렬
+                
+        
 
 
 4. css 색상 표현하는 방법
