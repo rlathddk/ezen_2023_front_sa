@@ -58,6 +58,7 @@ button {width: 50px;}
 #article {width: 1000px; display: flex;}
 #article dl {margin: 20px 0 40px 0;}
 #article dl dt {
+    margin-bottom: 10px;
     font-size: 17px;
     font-weight: bold;
     padding-bottom: 10px;
