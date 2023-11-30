@@ -1,0 +1,59 @@
+#header{
+    display: flex;
+    background-color: aqua;
+    z-index: 3;
+    position: sticky; /* 해당요소가 사라질 때 */
+    top: 0px;
+}
+#header ul li {
+    display: inline-block;
+}
+#popup {
+    background-color: red;
+    width: 200px; 
+    height: 200px;
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    z-index: 2;
+}
+#parent {
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: blueviolet;
+    position: relative;
+    z-index: 3;
+}
+#parent div {
+    width: 100px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: yellow;
+    position: absolute;
+
+}
+#box1 {
+    top: 100px;
+    left: 300px;
+}
+#box2 {
+    top: 170px;
+    left: 150px;
+}
+#box3 {
+    top: 310px;
+    left: 150px;
+}
+#box4 {
+    bottom: 30px;
+    left: 300px;
+}
+#box5 {
+    top: 310px;
+    right: 150px;
+}
+#box6 {
+    top: 170px;
+    right: 150px;
+}

@@ -1,0 +1,117 @@
+* {
+    padding: 0; margin: 0;
+}
+a {color: black; text-decoration: none;}
+
+
+body {
+    background-color: #f5f6f7;
+}
+/* 헤더 */
+#wrap {
+    width: 400px;
+    margin: 0 auto;
+}
+#headerLogo { 
+    text-align: center;
+    margin: 50px 0;
+}
+#headerLogo img {
+    width: 150px;
+}
+/* 본문 */
+/* 1. 입력상자 만들기 */
+.inputBox {
+    background-color: white;
+    border: 1px solid #dedede;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; /* 세로정렬 */
+}
+.inputBox input, select {
+    border: none; /* 테두리제거 */
+    background-color: white;
+    height: 30px;
+    width: 100%;
+}
+.inputBox span {
+    color: #aeaeae;
+}
+/* 포커스 : 커서가 깜박거림 상태 */
+*:focus{
+    outline: none;
+}
+h5 {
+    margin: 20px 0 5px 0;
+}
+.inputIcon{
+    width: 25px;
+    height: 25px;
+    background-image: url(https://static.nid.naver.com/images/ui/join/m_icon_pw_step.png);
+    background-size: 120px 75px; /* 가로, 세로 사이즈 */
+}
+#pwIcon {
+    background-position-x: 0px; /* x축 위치 */
+    background-position-y: 0px; /* y축 위치 */
+}
+#pwConfirmIcon {
+    background-position-x: -75px; /* x축 위치 */
+    background-position-y: 0px; /* y축 위치 */
+}
+/* 생년월일 */
+#brithBox {
+    display: flex;
+    justify-content: space-between;
+}
+/* 년, 월, 일 */
+.birthY, .birthM, .birthD{
+    width: 100px;
+}
+/* 성별 */
+.titleAt{
+    font-size: 10px;
+    color: #aeaeae;
+}
+/* 휴대전화 */
+#phonBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+#phonBox > input {
+    background-color: #03C75A;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+}
+#phonBox > div {
+    width: 268px;
+}
+
+#inputAuth, #inputAuth > input {
+    background-color: #f5f6f7;
+}
+/* 가입하기 */
+#signupBtn {
+    background-color: #03C75A;
+    border: none;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0px;
+}
+/* 푸터 */
+#footerBox{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#ftTop {
+    font-size: 8px;
+    color: #aeaeae;
+}
+#ftBottom img {height: 10px;}
+#ftBottom span {font-size: 5px;}

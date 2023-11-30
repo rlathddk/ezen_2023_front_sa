@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header"> <!-- 헤더 -->
+            <div id="headerLogo">
+                <a href="http://www.naver.com">
+                    <img src="img/n_logo.png" alt="">
+                </a>
+            </div>
+        </div>
+        <form id="main"> <!-- 본문 -->
+            <h5>아이디</h5>
+            <div class="inputBox">
+                <input type="text" maxlength="25"/>
+                <span>@naver.com</span>
+            </div>
+
+            <h5>비밀번호</h5>
+            <div class="inputBox">
+                <input type="text" maxlength="25"/>
+                <span class="inputIcon" id="pwIcon"></span>
+            </div>
+
+            <h5>비밀번호 확인</h5>
+            <div class="inputBox">
+                <input type="text" maxlength="25"/>
+                <span class="inputIcon" id="pwConfirmIcon"></span>
+            </div>
+
+            <h5>이름</h5>
+            <div class="inputBox">
+                <input type="text" maxlength="25"/>
+            </div>
+
+            <h5>생년월일</h5>
+            <div id="brithBox">
+                <div class="inputBox birthY">
+                    <input type="text" maxlength="4" placeholder="년(4자리)"/>
+                </div>
+                <div class="inputBox birthM">
+                    <select>
+                        <option value="">월</option>
+                        <option value="">1월</option>
+                        <option value="">2월</option>
+                        <option value="">3월</option>
+                        <option value="">4월</option>
+                        <option value="">5월</option>
+                        <option value="">6월</option>
+                        <option value="">7월</option>
+                        <option value="">8월</option>
+                        <option value="">9월</option>
+                        <option value="">10월</option>
+                        <option value="">11월</option>
+                        <option value="">12월</option>
+                    </select>
+                </div>
+                <div class="inputBox birthD">
+                    <input type="text" maxlength="2" placeholder="일"/>
+                </div>
+            </div>
+            <h5>성별</h5>
+            <div class="inputBox">
+                <select>
+                    <option value="">성별</option>
+                    <option value="">남자</option>
+                    <option value="">여자</option>
+                </select>
+            </div>
+
+            <h5>본인 확인 이메일<span class="titleAt">(선택)</span></h5>
+            <div class="inputBox">
+                <input type="text" maxlength="25" placeholder="선택입력"/>
+            </div>
+
+            <h5>휴대전화</h5>
+            <div class="inputBox">
+                <select>
+                    <option value="">대한민국 +82</option>
+                    <option value="">미국 +1</option>
+                </select>
+            </div>
+            <div id="phonBox">
+                <div class="inputBox">
+                    <input type="text" maxlength="20" placeholder="전화번호 입력"/>
+                </div>
+                <input type="button" value="인증번호 받기">
+            </div>
+            <div class="inputBox" id="inputAuth">
+                <input disabled type="text" disabled maxlength="30" placeholder="인증번호를 입력하세요" />
+            </div>
+            <input id="signupBtn" type="submit" value="가입하기"/>
+            </form>
+        </div>
+        <div id="footer"> <!-- 푸터 -->
+            <div id="footerBox">
+                <div id="ftTop">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">책임의 한계와 법적고지</a>
+                    <a href="#">회원정보 고객센터</a>
+                </div>
+                <div id="ftBottom">
+                    <img src="img/n_logo.png" alt="">
+                    <span>Copyright NAVER Corp. All Rights Reseved</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
