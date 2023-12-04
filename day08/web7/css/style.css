@@ -1,0 +1,269 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    color: #121212;
+}
+
+.ffJosefin {
+    font-family: 'Josefin Sans', 'sans-serif';
+    
+}
+.innerWrap {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 80px 20px 0;
+}
+main h2 {
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: .05em;
+    margin-bottom: 80px;
+}
+header {
+    background: url(../images/hero.jpg) no-repeat right center/cover;
+
+}
+header .innerWrap {
+    height: 720px;
+    position: relative;
+}
+header h1 {
+    padding-top: 120px;
+}
+header .scroll {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* header .innerWrap 기준점 (position : relative) */
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+header .scroll img {
+    margin-top: 8px;
+    animation-name: scrollAnimation;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 1240x;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+.msgSec {
+    background-color: #fbfaf7;
+}
+.msgSec p {
+    text-align: center;
+    line-height: 1.75;
+    margin-bottom: 40px;
+}
+.msgSec p.illust {
+    margin-top: 80px;
+    margin-bottom: 0;
+    position: relative;
+}
+.msgSec p.illust::before {
+    content: url(../images/deco_left.png);
+    position: absolute;
+    left: 320px;
+    bottom: -30px;
+}
+.msgSec p.illust::after {
+    content: url(../images/deco_right.png);
+    position: absolute;
+    right: 320px;
+    bottom: -30px;
+}
+.dateSec {
+    background-color: #ffffff;
+    padding-bottom: 120px;
+}
+
+.dateSec .layoutWrap {
+    display: flex;
+}
+.dateSec .layoutWrap {
+    flex-basis : 735px;
+}
+.dateSec .layoutWrap > div {
+    flex-basis: 465px;
+    padding-top: 100px;
+}
+.dateSec .dateDatailSec{
+    font-size: 72px;
+    margin: 0 0 170px -100px;
+    background-color: #ffffff;
+    padding: 40px 64px;
+    line-height: 1.2;
+}
+.word1 {font-size: 50px;}
+.word2 {font-size: 40px;}
+.word3 {font-size: 60px;}
+
+.accessSec {
+    margin-left: 48px;
+}
+.accessSec h3 {
+    color: #cfafa3;
+    font-size: 55px;
+    letter-spacing: .05em;
+    margin-bottom: 8px;
+}
+.accessSec p {
+    line-height: 1.6; 
+}
+.formSec {
+    background-color: #efe8d9;
+    padding-bottom: 60px;
+}
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    border: 1px solid #cccccc;
+    background-color : #ffffff;
+    width: 100%;
+    margin-top: 5px;
+    padding: 4px 8px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width:16px;
+    height: 16px;
+    vertical-align: baseline;
+    margin-right: 4px;
+}
+.attendRadio {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.attendRadio label {
+    margin: 0 20px;
+    font-size: 24px;
+}
+.allergyCheak label {
+    margin-right: 24px;
+}
+select {
+    background: #ffffff url(../images/arrow.png) no-repeat 98% 50%/17px 10px;
+}
+textarea{
+    height: 148px;
+    margin-bottom: 30px;
+}
+form > p {
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.submitBtn {
+    text-align: center;
+}
+input[type="submit"] {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 18px 80px;
+    transition: 500ms;
+}
+footer {
+    background-color: #c7887f;
+    color: #f3e9e5;
+    padding: 14px 10px 20px;
+    text-align: center;
+}
+
+/* 패럴랙스 효과 */
+.dateSec {
+    margin-bottom: 480px;
+}
+/* 가상 요소 선택자 이용한 이미지 삽입 */
+.dateSec::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat center/cover;
+    z-index: -1;
+}
+/* p.165 애니메이션 효과 */
+input[type="submit"]:hover {
+    background-color: #c7887f;
+    margin-left: 120px;
+    transition-property: background-color, margin-left;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+    transition-delay: 0;
+}
+
+@keyframes scrollAnimation {
+    0% { /* 시작점 */ 
+        transform: scaleY(0);
+        transform-origin: top;
+    } 
+
+    50% { /* 가운데 이전 */
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    50.1% { /* 가운데 이후 */
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+    
+    100% { /* 종료점 */
+        transform: scaleY(0);
+        transform-origin: bottom;
+    }
+}
+header .scroll img {
+    animation-name: scrollAnimation;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+/*
+p.150
+    !important > styyle속성 > id > class > 타입 > * 
+
+p.151~152 : 가상 요소 선택자
+    - HTML에 없던 내용물[주로 텍스트, 이미지]을 CSS에서 넣어주기 가능한 기능
+    ::before : 요소 앞부분에 내용물 가상으로 넣어주기
+    ::after : 요소 뒷부분에 내용물 가상으로 넣어주기
+        content : 가상 요소의 내용물
+
+    flex-basis : 465px : 유연성
+        vs
+    width : 465px : 고정 
+        차이점 : 1.flex-direction:colums 일때
+                    width : 고정 flex-basis : 전체사이즈 늘어남
+                2. 요소보다 더 큰 컨텐츠가 들어왔을 떄 
+                    width : 고정 flex-bbasis : 같이 늘어남
+        
+ */
