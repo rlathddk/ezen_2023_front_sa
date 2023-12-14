@@ -1,0 +1,70 @@
+<!-- 
+[과제]
+주제 : 가계부
+[요구사항]
+
+    [조건] 배열 3개 사용/ 함수(등록함수, 출력함수, 삭제함수)
+
+    [1.입력]
+        날짜(날짜), 항목, 금액(천단위쉼표없이)[3가지 항목] 입력 후 등록버튼 눌르면 저장
+
+    [2.출력]
+        저장된 배열내 모든 요소의 값을 그림과 같이 출력
+
+    [3.삭제]
+        선택된 항목을 삭제시[3가지 항목]같이 삭제.
+
+    [4.총합계]
+        총합계
+
+====================추가 요구사항=======================
+
+    1. css 간단히 
+    2. 천단위 쉼표 만들어주는 함수 [*js에서 제공하는 함수x, 외부라이브러리 금지]
+    3. 날짜 무작위로 등록해도 오름차순 출력되게
+
+
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step4.css'>
+    <script src='step4.js'></script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>가계부</h1>
+        <div id="Top">
+            <ul>
+                <li>날짜 : <input id="date" type="date"></li>
+                <li>항목 : <input id="list" type="text"></li>
+                <li>금액 : <input id="money" type="text"></li>
+            </ul>
+            <button onclick="등록함수()">등록</button>
+        </div>
+        <div id="Bottom">
+            <div class="table">
+                <div class="th">
+                    <p>날짜</p>
+                    <p>항목</p>
+                    <p>금액</p>
+                    <p>비고</p>
+                </div>
+                <!-- <div class="dateIn">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p><button onclick="삭제함수()" value="삭제">삭제</button></p>
+                </div> -->
+            </div>
+            <p id="Sum">총합계 : 0원</p>
+        </div>
+    </div> <!-- wrap emd -->
+
+</body>
+</html>
