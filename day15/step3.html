@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='step3.js'></script>
+    <link rel="stylesheet" href="step3.css">
+</head>
+<body>
+    <div id="wrap"> <!--전체구역-->
+        <h1>나만의 할일 목록</h1>
+        <div id="todoTop"> <!--쓰기 구역-->
+            <input id="content" type="text">
+            <input onclick="등록함수()" type="button" value="등록">
+        </div>
+
+        <div id="todoBottom"> <!--출력 구역-->
+
+            <div class="todo sucess"><!-- 하나의 할일 -->
+                <div class="content">자바 스크립트 공부하기</div>
+                <div class="btnBox">
+                    <input onclick="변경함수()" type="button" value="변경">
+                    <input onclick="삭제함수()" type="button" value="삭제">              
+                </div>
+            </div>
+
+            <div class="todo"><!-- 하나의 할일 -->
+                <div class="content">운동하기</div>
+                <div class="btnBox">
+                    <input onclick="변경함수()" type="button" value="변경">
+                    <input onclick="삭제함수()" type="button" value="삭제">                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

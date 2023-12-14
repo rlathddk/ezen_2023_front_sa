@@ -49,24 +49,24 @@ console.log('우유 구매');
             //vs 10번 출력해 [가능하지만 힘들어요..]
 for(let i = 1; i<=10; i++){console.log('for)우유 구매');}
 
-// p.178 예제1
-for(let i =0; i < 5; i++){// for start
-    // - let i는 0부터 5미만까지 1씩증가 하면서 console.log 반복 실행 [0 1 2 3 4 총5회]
-    console.log(`${i}번째 반복입니다.`);
+// // p.178 예제1
+// for(let i =0; i < 5; i++){// for start
+//     // - let i는 0부터 5미만까지 1씩증가 하면서 console.log 반복 실행 [0 1 2 3 4 총5회]
+//     console.log(`${i}번째 반복입니다.`);
 
-}// for end
+// }// for end
 
 // p.179 예제2 누적합계.
 
-let output = 0;
-for (let i= 1; i<=100; i++) { // for start
-//  - let i 는 1부터 100이하까지 1씩 증가 하면서 output에 i를 더하는 반복 실행 [총 100회]
-    output += i; // vs output = output+i
-    // - output에 i를 더한 값을 output에 저장
-    console.log(`${i}회 output : ${output}`);
-} // for end // 100회 끝남 ... 
+// let output = 0;
+// for (let i= 1; i<=100; i++) { // for start
+// //  - let i 는 1부터 100이하까지 1씩 증가 하면서 output에 i를 더하는 반복 실행 [총 100회]
+//     output += i; // vs output = output+i
+//     // - output에 i를 더한 값을 output에 저장
+//     console.log(`${i}회 output : ${output}`);
+// } // for end // 100회 끝남 ... 
 
-console.log(`1~100까지 숫자를 모두 더하면${output}입니다.`)
+// console.log(`1~100까지 숫자를 모두 더하면${output}입니다.`)
 
 //p.180 예제3 for문과 배열 (인덱스:0부터 ~1씩 증가 패턴/ 배열내 인덱스 순회/확인)의 관계
     // - 0부터 마지막 인덱스(<=배열.length-1 또는 < 배열.length)까지
