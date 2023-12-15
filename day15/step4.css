@@ -56,18 +56,32 @@ h1 {
 }
 #Bottom .table .th {
     display: flex;
-    justify-content: space-between;
+    width: 100%;;
+    
 }
 #Bottom .table .th p{
     font-size: 15px;
     font-weight: bold;
     padding: 10px 0;
+    width: 25%;
 
 }
-#Bottom .table .dateIn {
+#date_box_inner {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 12px;
 }
+#date_box_inner p {
+    width: 25%;
+}
+#date_box_inner input {
+    margin: 0 auto;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
 #Sum {
     font-size: 17px;
     font-weight: bold;
