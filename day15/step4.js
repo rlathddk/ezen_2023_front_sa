@@ -57,4 +57,14 @@ function 출력함수(){
     document.querySelector('#date').value=''
     document.querySelector('#list').value=''
     document.querySelector('#money').value=''
+
+    let sum = Number('');
+    for (i = 0; i < 금액목록.length; i++) {
+    sum += Number(금액목록[i]);
+  
+document.querySelector("#sum").innerHTML= sum
+
 }
+}
+
+    // 총합계

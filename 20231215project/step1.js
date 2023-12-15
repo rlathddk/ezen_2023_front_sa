@@ -148,3 +148,4 @@ function 출력함수(){
     document.querySelector('#윗몸일으키기').value=''
     document.querySelector('#턱걸이').value=''
 }
+
