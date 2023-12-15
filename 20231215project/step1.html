@@ -11,14 +11,16 @@
 <body>
     
     <div id="wrap"> <!-- 전체 랩 -->
-        <h1>이젠GYM체력검정평가</h1>
+        <h1>이젠<span style="color:#32c29d ; padding:0 5px">GYM</span>체력검정평가</h1>
         <div id="contentInput" >    <!--  입력 -->
-            <div> 이름 : <input id="이름" type="text" placeholder="이름을 입력해 주세요." ></div>
-            <div> 팔굽혀펴기 : <input id="팔굽혀펴기" type="text" placeholder="개수"></div>
-            <div> 윗몸일으키기 : <input id="윗몸일으키기" type="text" placeholder="개수"></div>
-            <div> 턱걸이 : <input id="턱걸이" type="text" placeholder="개수"></div>
-            <div> <input id="등록" onclick="등록함수()" type="button" value="등록"></div>
-            <div> <input id="수정" onclick="수정함수()" type="button" value="수정"></div>
+            <div> <span>이름</span>  <input id="이름" type="text" placeholder="이름을 입력해 주세요." ></div>
+            <div> <span>팔굽혀펴기</span>  <input id="팔굽혀펴기" type="text" placeholder="개수"></div>
+            <div> <span>윗몸일으키기</span>  <input id="윗몸일으키기" type="text" placeholder="개수"></div>
+            <div> <span>턱걸이</span> <input id="턱걸이" type="text" placeholder="개수"></div>
+            <div class="btn_box">
+                <div> <input id="등록" onclick="등록함수()" type="button" value="등록"></div>
+                <div> <input id="수정" onclick="수정함수()" type="button" value="수정"></div>
+             </div>
         </div>
 
         <div id="contentFtWrap">    <!-- 중앙 하단 컨텐츠 랩  -->
@@ -30,6 +32,7 @@
                 <div class="list_3">턱걸이</div>
                 <div class="total">총점</div>
                 <div class="grade">등급</div>
+                <div class="note">비고</div>
             </div> 
 
             <div id="contentOutput">        <!-- 하단 출력부분 -->

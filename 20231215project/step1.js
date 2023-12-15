@@ -87,4 +87,8 @@ function 출력함수(){
     const contentOutput = document.querySelector('#contentOutput')
 
     contentOutput.innerHTML=html;
+    document.querySelector('#이름').value=''
+    document.querySelector('#팔굽혀펴기').value=''
+    document.querySelector('#윗몸일으키기').value=''
+    document.querySelector('#턱걸이').value=''
 }
