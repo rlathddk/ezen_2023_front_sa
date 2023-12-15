@@ -59,9 +59,11 @@ h1 {
     letter-spacing: 5px;
     cursor: pointer;
     font-weight: bold;
+    transition : 0.5s
 }
 .btn_box input:hover { 
     background-color: #93ffe4;
+    transition : 0.5s
 }
 .btn_box > div:last-child input {
     background-color: #f2f2f2;

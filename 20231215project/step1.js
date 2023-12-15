@@ -44,7 +44,7 @@ if (총점 >=130) {result= "A"}
 else if (총점 >=120) {result= "B"}
 else if (총점 >=110) {result= "C"}
 else if (총점 >=100) {result= "D"}
-else {result= "fail"}
+else {result= "재시험"}
 
 
 return result;
