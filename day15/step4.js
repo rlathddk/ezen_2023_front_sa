@@ -34,6 +34,7 @@ function 출력함수(){
     
     let html= '';
     let sum = Number('');
+    
     for(let i=0 ;i < 날짜목록.length; i++){
 
     html += `<div id="date_box_inner">
@@ -49,12 +50,9 @@ function 출력함수(){
     document.querySelector('#date_box').innerHTML= html;
     document.querySelector('#sum').innerHTML= sum;
 
-    
     //초기화
     document.querySelector('#date').value=''
     document.querySelector('#list').value=''
     document.querySelector('#money').value=''
         
     }
-
-
