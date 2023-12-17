@@ -15,8 +15,6 @@ function 등록함수(){ console.log('등록함수() 실행');
     const 팔굽혀펴기 = document.querySelector('#팔굽혀펴기').value;
     const 윗몸일으키기 = document.querySelector('#윗몸일으키기').value;
     const 턱걸이 = document.querySelector('#턱걸이').value; 
-    // const 총점 = document.querySelector('#총점').value; console.log( 총점 );
-    // const 등급 = document.querySelector('#등급').value; console.log( 등급 );
 
     const nIndex = 이름목록.indexOf(이름);  // 배열이름 비교 
     //이름 중복 검사 후 -1 true 시 회원등록 , 아닐시 이미 등록된 회원 안내
