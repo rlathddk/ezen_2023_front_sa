@@ -44,9 +44,10 @@ function 출력함수(){
                 <p><button onclick="삭제함수(${i})" value="삭제">삭제</button></p>
             </div>`
             sum += Number(금액목록[i]);
+          
+        //대입할 곳
         }
-
-    //대입할 곳
+       
     document.querySelector('#date_box').innerHTML= html;
     document.querySelector('#sum').innerHTML= sum;
 
@@ -54,5 +55,6 @@ function 출력함수(){
     document.querySelector('#date').value=''
     document.querySelector('#list').value=''
     document.querySelector('#money').value=''
-        
+
     }
+    // length가 홀수 자리 일 때마다 뒤에 콤마를 찍어준다? 3 6 9
