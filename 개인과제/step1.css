@@ -1,0 +1,129 @@
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* 전체구역 */
+#wrap{
+    width: 700px;
+    margin: 10px auto;
+}
+/* 헤더 이미지 */
+#header {
+    background-color: #906c55;
+    color: white;
+}
+#header > img { 
+    width: 100%;
+}
+/* 헤더 카테고리 */
+#header > ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    padding: 15px 0;
+}
+/* 선택된 카테고리 */
+#header > ul > .selectMenu {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px ;
+    color: black;
+    font-weight: bold;
+}
+/* 제품 목록 구역 */
+#productBox {
+    display: flex;
+    flex-wrap: wrap; /* 줄바꿈처리 */
+    height: 500px;
+    /* 자식요소들이 고정 사이즈의 부모요소다 커졌을 때 */
+    overflow-y: scroll; /* 세로 스크롤 생성 */
+}
+/* 제품 1개 구역  */
+#productBox > .product {
+    width: 205px; /* 700px에서 가로에 배치할 개수로 나누기 */
+    margin: 25px 10px;
+}
+/* 제품 이미지 */
+#productBox > .product > img {
+    width: 100%;
+}
+/* 제품 이름 가격 */
+#productBox > .product > .pinfo {
+    text-align: center;
+}
+#productBox > .product .pname {
+    font-weight: bold;
+}
+#productBox > .product .pprice {
+    color: red;
+}
+/* 카트 버튼들 */
+#cartBtns {
+    display: flex;
+}
+#cartBtns > input {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    color: white;
+ }
+ /* 자식요소 선택자 */
+ /* 자식 여러개일 때[형제가 여러개일때] 자식의 순번으로  */
+ /* 자식요소선택자: nth-child(인덱스) */
+ #cartBtns > input:nth-child(1){
+    background-color: #286F31;
+ }
+ #cartBtns > input:nth-child(2){
+    background-color: #906c55;
+ }
+ /* 카트 정보의 상단부분 */
+ #cartContent {
+    background-color: #e8e8e8;
+ }
+ #cartTop{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+ }
+ #cartBottom {
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap; /* 자식요소들의 사이즈로 자동으로 변화해서 한줄로 표시 */
+ }
+ /* 카트에 담김 제품1개 */
+ #cartBottom > .citem {
+     /* 부모요소가 flex이면서 nowrap이면 사이즈가 자동 변환 */
+     min-width: 150px; /* 고정 최소 가로사이즈 */
+     background-color: white;
+     margin: 10px;
+     padding: 10px;
+     position: relative;
+ }
+ /* 카트에 x취소 표시 */
+ #cartBottom > .citem > span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+ }
+ #cartBottom > .citem > div:nth-child(2) {
+   color: red;
+ }
+ /* 카트 개수 표시 */
+ #cartTop > div:nth-child(1) span {
+    background-color: red;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 2px 5px ;
+    text-align: center;
+    color: white;
+ }
+ /* 카트 금액 */
+ #cartTop > div:nth-child(2) span {
+    color: red;
+ }

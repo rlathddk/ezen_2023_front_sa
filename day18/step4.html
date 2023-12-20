@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step4.css'>
+    <script src='step4.js'></script>
+</head>
+<body>
+    
+    <div id="wrap"> <!-- 전체 랩 -->
+        <h1>이젠<span style="color:#32c29d ; padding:0 5px">GYM</span>체력검정평가</h1>
+        <div id="contentInput" >    <!--  입력 -->
+            <div> <span>이름</span>  <input id="이름" type="text" placeholder="이름을 입력해 주세요." ></div>
+            <div> <span>팔굽혀펴기</span>  <input id="팔굽혀펴기" type="text" placeholder="개수"></div>
+            <div> <span>윗몸일으키기</span>  <input id="윗몸일으키기" type="text" placeholder="개수"></div>
+            <div> <span>턱걸이</span> <input id="턱걸이" type="text" placeholder="개수"></div>
+            <div class="btn_box">
+                <div> <input id="등록" onclick="등록함수()" type="button" value="등록"></div>
+                <div> <input id="수정" onclick="수정함수()" type="button" value="수정"></div>
+             </div>
+        </div>
+
+        <div id="contentFtWrap">    <!-- 중앙 하단 컨텐츠 랩  -->
+
+            <div id="contentFtHeard"><!-- 기본 항목 표시 부분 -->
+                <div class="name">이름</div>
+                <div class="list_1">팔굽혀펴기</div>
+                <div class="list_2">윗몸일으키기</div>
+                <div class="list_3">턱걸이</div>
+                <div class="total">총점</div>
+                <div class="grade">등급</div>
+                <div class="note">비고</div>
+            </div> 
+
+            <div id="contentOutput">        <!-- 하단 출력부분 -->
+                
+
+            </div>  <!-- contentOutput end -->
+
+        </div> <!-- contentFtWrap end -->
+
+    </div><!-- 전체 랩ends -->
+
+
+
+</body>
+</html>
