@@ -25,7 +25,7 @@ function 카테고리출력(selectCno){
     let html ='';
         for(let i = 0; i<카테고리목록.length ; i++) {
             html += `
-            <li onclick="제품메뉴출력(${카테고리목록[i].cno})" 
+            <li onclick="제품메뉴출력(${카테고리목록[i].cno})"  
             class="${카테고리목록[i].cno == selectCno ? 'selectMenu': ''}">
             ${카테고리목록[i].카테고리}
             </li>
@@ -45,10 +45,10 @@ function 제품메뉴출력(selectCno) {
             if( 제품메뉴[i].cno == selectCno){
                     html += `
                         <div onclick="" class="product">
-                            <img src="img/${제품메뉴[i].이미지}" alt="">
+                            <img src="img/${제품메뉴[i].이미지}.png" alt="">
                             <div class="pinfo">
                                 <div class="pname">${제품메뉴[i].이름}</div> 
-                                <div class="pprice">${제품메뉴[i].가격}</div>
+                                <div class="pprice">${제품메뉴[i].이름}</div>
                             </div>
                         </div>
                     `
