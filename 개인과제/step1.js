@@ -41,7 +41,7 @@ function 카테고리출력(selectCno){ // 매개변수? 이해안됨
 
 // [함수2] : 제품메뉴 출력 함수
 
-
+제품메뉴출력(selectCno)
 function 제품메뉴출력(selectCno) {
     // 1. 어디에
     let productBox = document.querySelector('#productBox')
