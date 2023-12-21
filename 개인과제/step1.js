@@ -36,7 +36,6 @@ function 카테고리출력(selectCno){ // 매개변수? 이해안됨
         }
     // 3. 출력
     categoryUl.innerHTML = html;
-
     제품메뉴출력(selectCno)
 }
 
@@ -45,7 +44,7 @@ function 카테고리출력(selectCno){ // 매개변수? 이해안됨
 
 function 제품메뉴출력(selectCno) {
     // 1. 어디에
-    let 제품메뉴출력구역 = document.querySelector('#productBox')
+    let productBox = document.querySelector('#productBox')
     // 2. 무엇을
     let html = '';
         for( let i = 0 ; i<제품메뉴.length ; i++ ){ 
@@ -66,3 +65,8 @@ function 제품메뉴출력(selectCno) {
     productBox.innerHTML = html;
 
 } //fun end
+
+// - [함수3] 제품선택시 장바구니에 담아주는 함수. (실행조건 : 제품을 클릭했을 떄)
+function setCart(){ // - 함수선언
+
+}
