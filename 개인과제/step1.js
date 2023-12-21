@@ -33,19 +33,19 @@ function 카테고리출력(selectCno){
         }
     // 3. 출력
     categoryUl.innerHTML = html;
-    제품메뉴출력(selectCno)
+    제품메뉴출력(selectCno);
 }
 
 function 제품메뉴출력(selectCno) {
     // 1. 어디에
-    let 제품메뉴출력구역 = document.querySelector('#productBox')
+    let productBox = document.querySelector('#productBox')
     // 2. 무엇을
     let html = '';
         for( let i = 0 ; i<제품메뉴.length ; i++ ){ 
             if( 제품메뉴[i].cno == selectCno){
                     html += `
                         <div onclick="" class="product">
-                            <img src="img/${제품메뉴[i].이미지}.png" alt="">
+                            <img src="img/${제품메뉴[i].이미지}" alt="">
                             <div class="pinfo">
                                 <div class="pname">${제품메뉴[i].이름}</div> 
                                 <div class="pprice">${제품메뉴[i].이름}</div>
@@ -57,8 +57,3 @@ function 제품메뉴출력(selectCno) {
     // 3. 출력
     productBox.innerHTML = html;
 } //fun end
-
-// - [함수3] 제품선택시 장바구니에 담아주는 함수. (실행조건 : 제품을 클릭했을 떄)
-function setCart(){ // - 함수선언
-
-}
