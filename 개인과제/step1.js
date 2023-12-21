@@ -17,24 +17,31 @@ const 제품메뉴 = [
                 { pno : 8, 이름 : '유자차', 가격 : '4500원', cno: 4, 이미지 : '디저트2.png'},
                 { pno : 9, 이름 : '밀크티', 가격 : '4500원', cno: 5, 이미지 : '티1.png'},
                 ];
-카테고리출력(1);
-function 카테고리출력(selectCno){
+
+
+// [함수1] : 카테고리 출력 함수
+카테고리출력(1)
+function 카테고리출력(selectCno){ // 매개변수? 이해안됨 
  // 1. 어디에
     const categoryUl = document.querySelector('#header>ul')
  // 2. 무엇을
     let html ='';
         for(let i = 0; i<카테고리목록.length ; i++) {
             html += `
-            <li onclick="제품메뉴출력(${카테고리목록[i].cno})"  
-            class="${카테고리목록[i].cno == selectCno ? 'selectMenu': ''}">
-            ${카테고리목록[i].카테고리}
-            </li>
-            `
+                    <li onclick="제품메뉴출력(${카테고리목록[i].cno})"  
+                    class="${카테고리목록[i].cno == selectCno ? 'selectMenu': ''}">
+                    ${카테고리목록[i].카테고리}
+                    </li>
+                    `
         }
     // 3. 출력
     categoryUl.innerHTML = html;
+
     제품메뉴출력(selectCno)
 }
+
+// [함수2] : 제품메뉴 출력 함수
+
 
 function 제품메뉴출력(selectCno) {
     // 1. 어디에
@@ -45,20 +52,17 @@ function 제품메뉴출력(selectCno) {
             if( 제품메뉴[i].cno == selectCno){
                     html += `
                         <div onclick="" class="product">
-                            <img src="img/${제품메뉴[i].이미지}.png" alt="">
+                            <img src="img/${제품메뉴[i].이미지}" alt="">
                             <div class="pinfo">
                                 <div class="pname">${제품메뉴[i].이름}</div> 
-                                <div class="pprice">${제품메뉴[i].이름}</div>
+                                <div class="pprice">${제품메뉴[i].가격}</div>
                             </div>
                         </div>
                     `
             }// if end
         } // 1 for end
     // 3. 출력
+    
     productBox.innerHTML = html;
+
 } //fun end
-
-// - [함수3] 제품선택시 장바구니에 담아주는 함수. (실행조건 : 제품을 클릭했을 떄)
-function setCart(){ // - 함수선언
-
-}
