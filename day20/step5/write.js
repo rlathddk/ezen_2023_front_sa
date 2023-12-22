@@ -17,7 +17,7 @@ function 글쓰기(){
         let boardArray = JSON.parse( localStorage.getItem('boardArray')  )   
      
         if( boardArray == null ){ boardArray = [] }   // 배열을 새로 만들어준다.
-        else{boardArray.push( board )}; // 방금 작성된 글 배열에 추가
+        boardArray.push( board ) // 방금 작성된 글 배열에 추가
         localStorage.setItem('boardArray', JSON.stringify( boardArray ) );
 
 
