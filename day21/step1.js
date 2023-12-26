@@ -33,10 +33,10 @@ const object = {
 }
 // - 변수/상수 이름 정의할 때 주의할점 : 1:숫자시작x 2. 일부특수문자가능 3.띄어쓰기x 4.키워드x
 
-if (object.name !== undefined) {console.log('name 속성 존재');}
+if (object.name !== undefined) {console.log('name 속성 존재')}
 else{console.log('name 속성 없음');}
 
-if(object.author !== undefined){console.log('author' 속성 존재);}
+if(object.author !== undefined){console.log('author 속성 존재')}
 else{console.log('author 속성 없음')}
 
 

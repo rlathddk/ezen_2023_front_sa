@@ -15,7 +15,6 @@ function 모든글출력(){
                     <th>${boardArray[i].조회수}</th>
                  </tr>`
     }
-1
     tableBody.innerHTML = html;
 
     return;
