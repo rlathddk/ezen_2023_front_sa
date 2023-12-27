@@ -46,8 +46,8 @@ let cartArray = [] // 카트목록 (인덱스 : js에서만 사용할 예정 vs 
 
 
 // -[함수1] : 카테고리를 출력하는 함수 (실행조건 : js열렸을 때)
-printCategory(1)// 함수실행 //  실행시 선택카테고리 cno = 1로 가정 
-function printCategory(selectCno){ // 카테고리함수선언 왜? css 변동 때문에 여러번 출력할꺼라서 // 매개변수 : (내가 선택한 카테고리번호)함수안으로 들어온 변수 // 지역변수임=> 전역변수로 선언해도 됨
+printCategory(1)// 함수실행 // 최초 실행시 선택카테고리 cno = 1로 가정
+function printCategory(selectCno){ // 함수선언 // 매개변수 : (내가 선택한 카테고리번호)함수안으로 들어온 변수
     console.log('printCategory()함수')
     // 1. 어디에
     const categoryUl = document.querySelector('#header>ul');
@@ -58,7 +58,6 @@ function printCategory(selectCno){ // 카테고리함수선언 왜? css 변동 �
             // 만약에 i번째 카테고리의 cno와 내가선택한 cno[매개변수]와 같으면
             // 만약에 클릭했을 떄. 클릭한 li의 카테고리번호를 매개변수[클릭한]
             html += `<li onclick="printCategory(${categoryArray[i].cno})" 
-                    console.log(${categoryArray[i].cno})
                      class="${categoryArray[i].cno == selectCno ? 'selectMenu': ''}">
                      ${categoryArray[i].cname}
                      </li>`

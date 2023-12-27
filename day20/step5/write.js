@@ -2,7 +2,7 @@ const boardArray = []
 
 
 // 1. 글쓰기
-function 글쓰기(){// 매개변수 : x // 리턴값 : x
+function 글쓰기(){
     // 1. HTML로 부터 입력받은 값 가져오기
     const writer = document.querySelector('#writer').value;
     const password = document.querySelector('#password').value;
@@ -15,9 +15,9 @@ function 글쓰기(){// 매개변수 : x // 리턴값 : x
 
         // 기존 배열 호출
         let boardArray = JSON.parse( localStorage.getItem('boardArray')  )   
-        // - 만약에 기존배열을 호출할때 없으면 = null. 있으면 = 배열
+     
         if( boardArray == null ){ boardArray = [] }   // 배열을 새로 만들어준다.
-        else{boardArray.push( board )}; // 방금 작성된 글 배열에 추가
+        boardArray.push( board ) // 방금 작성된 글 배열에 추가
         localStorage.setItem('boardArray', JSON.stringify( boardArray ) );
 
 
