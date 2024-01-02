@@ -59,7 +59,7 @@ function 모든글출력(){// 매개변수 : x // 리턴값 : x
                     <th>${boardArray[i].조회수}</th>
                  </tr>`
     }
-1
+
     tableBody.innerHTML = html;
 
     return;

@@ -52,3 +52,6 @@ function 이미지등록( event ){
         imgByte = 파일읽기객체.result; 
     } // o end 
 } // f end 
+
+
+
